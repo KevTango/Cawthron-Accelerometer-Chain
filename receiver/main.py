@@ -1,6 +1,4 @@
 
-
-
 from machine import I2C, Pin, ADC
 from lis3dh import LIS3DH
 import time
