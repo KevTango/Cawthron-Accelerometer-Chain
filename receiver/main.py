@@ -1,12 +1,9 @@
 
 from machine import I2C, Pin, ADC
-from lis3dh import LIS3DH
+from lis3dh import LIS3DH, LIS3DH_I2C, RANGE_4_G, DATARATE_1_HZ
 import time
 import os
 import sys
-
-
-#ampy --port /serial/port put lis3dh.py /main.py
 
 if sys.platform == 'esp32': # ESP32
   scl_pin = Pin(22, pull=Pin.PULL_UP, mode=Pin.OPEN_DRAIN)
@@ -28,22 +25,10 @@ while True:
   x, y, z = [value for value in accelerometer.acceleration]
   print(x,y,z)
 
-  
   # Read value of thermistor
-  """
-  temp = thermistor.read() / 1024
-  temp -= 0.5
-  temp *= 100
-
-  """
   temp = thermistor.read() / (2**12)
   temp *= 100
   print(temp)
-  
   print()
   
   time.sleep(1)
-
-
-
-
