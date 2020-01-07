@@ -2,7 +2,7 @@
 
 ## Author: Kevin Tang
 
-### I wrote this code for Cawthron during my internship, it is to measure the acceleration at 10 different points of the mussel farm rope and to log the data on a single SD card.
+### I wrote this code for Cawthron Institute during my internship, it is to measure the acceleration at 10 different points of the mussel farm rope and to log the data on a single SD card.
 
 The file has two folders: 
 
