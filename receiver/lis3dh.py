@@ -1,7 +1,3 @@
-
-
-
-
 # Adafruit LIS3DH Accelerometer Micropython Driver
 # Based on the Arduino LIS3DH driver from:
 #   https://github.com/adafruit/Adafruit_LIS3DH/
@@ -158,7 +154,6 @@ class LIS3DH:
         """The x, y, z acceleration values returned in a 3-tuple and are in m / s ^ 2."""
         divider = 1
         accel_range = self.range
-
         if accel_range == RANGE_16_G:
             divider = 1365
         elif accel_range == RANGE_8_G:
@@ -184,7 +179,6 @@ class LIS3DH:
         :param shake_threshold: Increase or decrease to change shake sensitivity. This
                                 requires a minimum value of 10. 10 is the total
                                 acceleration if the board is not moving, therefore
-
                                 anything less than 10 will erroneously report a constant
                                 shake detected. (Default 30)
 
@@ -220,7 +214,6 @@ class LIS3DH:
 
     def read_adc_mV(self, adc): # pylint: disable=invalid-name
         """Read the specified analog to digital converter value in millivolts.
-
         ADC must be a value 1, 2, or 3.  NOTE the ADC can only measure voltages
         in the range of ~900-1200mV!
         """
@@ -279,7 +272,6 @@ class LIS3DH:
                               10-20 for 8G, 20-40 for 4G, and 40-80 for 2G.
 
         :param int time_limit: TIME_LIMIT register value (default 10).
-
         :param int time_latency: TIME_LATENCY register value (default 20).
         :param int time_window: TIME_WINDOW register value (default 255).
         :param int click_cfg: CLICK_CFG register value.
@@ -294,7 +286,6 @@ class LIS3DH:
             # Disable click interrupt.
             self._write_register_byte(_REG_CTRL3, ctrl3 & ~(0x80))  # Turn off I1_CLICK.
             self._write_register_byte(_REG_CLICKCFG, 0)
-
             return
         else:
             self._write_register_byte(_REG_CTRL3, ctrl3 | 0x80)  # Turn on int1 click output
@@ -342,7 +333,6 @@ class LIS3DH_I2C(LIS3DH):
         self._i2c.writeto(self.address, self._buffer[0:1])
         self._i2c.readfrom_into(self.address, self._buffer[0:length])
         return self._buffer
-
     def _write_register_byte(self, register, value):
         self._buffer[0] = register & 0xFF
         self._buffer[1] = value & 0xFF
@@ -390,6 +380,3 @@ class LIS3DH_SPI(LIS3DH):
         self._buffer[1] = value & 0xFF
         with self._spi as spi:
             spi.write(self._buffer, start=0, end=2) # pylint: disable=no-member
-
-
-

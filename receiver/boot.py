@@ -1,1 +1,8 @@
-# This file is executed on every boot (including wake-boot from deepsleep)#import esp#esp.osdebug(None)#import webrepl#webrepl.start()
+# boot.py -- run on boot-up
+# can run arbitrary Python, but best to keep it minimal
+
+import pyb
+#pyb.main('main.py') # main script to run after this one
+#pyb.usb_mode('CDC+MSC') # act as a serial and a storage device
+#pyb.usb_mode('CDC+HID') # act as a serial device and a mouse
+
