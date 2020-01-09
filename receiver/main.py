@@ -1,5 +1,5 @@
 from machine import I2C, Pin, ADC, UART
-from lis3dh import LIS3DH, LIS3DH_I2C, RANGE_4_G, DATARATE_1_HZ
+from lis3dh import LIS3DH, LIS3DH_I2C, RANGE_2_G, DATARATE_1_HZ
 from serial import Serial
 import time
 import os
@@ -17,7 +17,7 @@ else:
 i2c = I2C(-1, scl=scl_pin, sda=sda_pin)
 accelerometer = LIS3DH_I2C(i2c, int1=None)
 
-LIS3DH.range = RANGE_4_G # Setting range to 4G
+LIS3DH.range = RANGE_2_G # Setting range to 4G
 LIS3DH.datarate = DATARATE_1_HZ # Setting data rate to 1 Hz
 
 # Setting up communication
@@ -35,4 +35,15 @@ while True:
   print(temp)
   print()
   
+  # Writing coil
+  slave_addr=0x0A
+  output_address=0x00
+  output_value=0xFF00
+
+  return_flag = modbus_obj.write_single_coil(slave_addr, output_address, output_value)
+  output_flag = 'Success' if return_flag else 'Failure'
+  print('Writing single coil status: ' + output_flag)
+  print()
+  
   time.sleep(1)
+

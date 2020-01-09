@@ -117,6 +117,7 @@ class Serial:
 
         if len(response) == 0:
             raise OSError('no data received from slave')
+            #print('no data received from slave')
 
         resp_crc = response[-Const.CRC_LENGTH:]
         expected_crc = self._calculate_crc16(response[0:len(response) - Const.CRC_LENGTH])
@@ -209,3 +210,5 @@ class Serial:
             self._uart.deinit()
         except Exception:
             pass
+
+
