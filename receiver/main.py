@@ -5,6 +5,7 @@ import time
 import os
 import sys
 import math
+import machine
 
 if sys.platform == 'esp32': # ESP32
   scl_pin = Pin(22, pull=Pin.PULL_UP, mode=Pin.OPEN_DRAIN)
@@ -34,38 +35,28 @@ while True:
   zRounded = round(z, 2)
   print(xRounded, yRounded, zRounded)
   
-  #print()
-  """
-  # Read value of thermistor
-  print(thermistor.read())
-  inverseADC = 4095 - thermistor.read()
-  print(inverseADC)
-  temp = inverseADC / (2**12 - 1)
-  temp -= 0.5
-  temp *= 100
-  #temp *= 165
-  #temp -= 40
-  temp = round(temp, 2)
-  print(temp)
-  print()
-  """
+  # Thermistor 
   voltage = (thermistor.read() / 4095) * 3.3
   temp = (voltage - 0.5) * 100
-  print(temp)
+  tempRounded = round(temp, 2)
+  print(tempRounded)
   
   print()
   
   # Writing coil
   slave_addr=0x0A
   output_address=0x00
-  output_value=0xFF00
-
-  #return_flag = modbus_obj.write_single_coil(slave_addr, output_address, output_value)
-  #output_flag = 'Success' if return_flag else 'Failure'
-  #print('Writing single coil status: ' + output_flag)
+  output_value=0xFF00      
+  
+  return_flag = modbus_obj.write_single_coil(slave_addr, output_address, output_value)
+  output_flag = 'Success' if return_flag else 'Failure'
+  print('Writing single coil status: ' + output_flag)
   #print()
   
   time.sleep(1)
+  #machine.deepsleep(1000) # Deep sleep mode for 1 s, may change to gpio pin e.g. rx
+
+
 
 
 
