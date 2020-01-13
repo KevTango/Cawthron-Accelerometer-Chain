@@ -48,7 +48,11 @@ while True:
   thermistorTest = round(thermistorTest, 2)
   print(thermistorTest)
   
-  print(uart.read())
+  #print(uart.read())
+  uart.write(str(xRounded))
+  uart.write(str(yRounded))
+  uart.write(str(zRounded))
+  uart.write(str(thermistorTest))
   
   print()
   
@@ -129,6 +133,7 @@ while True:
   #output_flag = 'Success' if return_flag else 'Failure'
   #print('Writing multiple register status: ' + output_flag)
   """
+
 
 
 
