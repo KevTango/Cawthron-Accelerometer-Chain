@@ -13,6 +13,8 @@ if sys.platform == 'esp32': # ESP32
   ADC.width(ADC.WIDTH_12BIT)
   thermistor = ADC(Pin(34))
   thermistor.atten(ADC.ATTN_11DB) # Full range: 3.3v
+  #uart = UART(uart_id, baudrate=9600, bits=8, parity=None, stop=1)
+  uart = UART(2, baudrate=9600, bits=8, parity=None, stop=1)
 else:
   print('Incompatible board detected, please connect ESP32')
   
@@ -23,8 +25,8 @@ LIS3DH.range = RANGE_2_G # Setting range to 2G
 LIS3DH.datarate = DATARATE_1_HZ # Setting data rate to 1 Hz
 
 # Setting up communication
-uart_id = 0x01
-modbus_obj = Serial(uart_id)
+#uart_id = 0x01
+#modbus_obj = Serial(uart_id)
 
 while True:
   # Print X,Y,Z acceleration values in m/s^2
@@ -35,14 +37,26 @@ while True:
   zRounded = round(z, 2)
   print(xRounded, yRounded, zRounded)
   
-  # Thermistor 
+  # Thermistor (Two approaches, need further testings as code fluctuates
   voltage = (thermistor.read() / 4095) * 3.3
   temp = (voltage - 0.5) * 100
   tempRounded = round(temp, 2)
   print(tempRounded)
   
+  thermistorTest = thermistor.read() / 4095
+  thermistorTest *= 100
+  thermistorTest = round(thermistorTest, 2)
+  print(thermistorTest)
+  
+  print(uart.read())
+  
   print()
   
+  time.sleep(1)
+  #machine.deepsleep(1000) # Deep sleep mode for 1 s, may change to gpio pin e.g. rx
+  
+  """
+  # Modbus functions
   ######################### READ COILS #########################
   #slave_addr=0x0A
   #starting_address=0x00
@@ -114,9 +128,9 @@ while True:
   #return_flag = modbus_obj.write_multiple_registers(slave_addr, register_address, register_values, signed)
   #output_flag = 'Success' if return_flag else 'Failure'
   #print('Writing multiple register status: ' + output_flag)
-  
-  time.sleep(1)
-  #machine.deepsleep(1000) # Deep sleep mode for 1 s, may change to gpio pin e.g. rx
+  """
+
+
 
 
 
