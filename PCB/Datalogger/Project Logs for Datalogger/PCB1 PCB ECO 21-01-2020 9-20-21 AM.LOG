@@ -1,0 +1,31 @@
+Added Component: Designator=P1(HDR1X2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P2(HDR1X6H)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P3(HDR1X2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Net: Name=Net1_3V3 3V3-1
+Added Pin To Net: NetName=Net1_GND GND0 GND1 GND2 GND3 GND4 GND5 GND6 Pin=P3-1
+Added Net: Name=Net1_GND GND0 GND1 GND2 GND3 GND4 GND5 GND6
+Added Pin To Net: NetName=Net1_V+ V+1 V+2 V+3 V+4 V+5 V+6 Pin=P3-2
+Added Net: Name=Net1_V+ V+1 V+2 V+3 V+4 V+5 V+6
+Added Net: Name=Net1_X9
+Added Net: Name=Net1_X10
+Added Net: Name=Net1_X20
+Added Net: Name=Net1_Y1
+Added Net: Name=Net1_Y2
+Added Pin To Net: NetName=NetP1_1 Pin=P1-1
+Added Net: Name=NetP1_1
+Added Pin To Net: NetName=NetP1_2 Pin=P1-2
+Added Net: Name=NetP1_2
+Added Class: Name=Sheet1
+Added Room: Name=Sheet1
