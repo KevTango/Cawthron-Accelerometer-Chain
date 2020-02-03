@@ -64,4 +64,6 @@ Components needed and links for 1 datalogger and 10 receivers:
 
 * [10 x TMP36](https://www.digikey.co.nz/product-detail/en/analog-devices-inc/TMP36GT9Z/TMP36GT9Z-ND/820404)
 
+Wiring diagram is provided in the PCB folder (datalogger_schematic.PNG and receiver_schematic.PNG)
+
 ## Troubleshooting
