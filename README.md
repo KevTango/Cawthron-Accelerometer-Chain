@@ -44,4 +44,24 @@ The file has three folders:
 
 ## PCB
 
+Components needed and links for 1 datalogger and 10 receivers:
+
+* [11 x Pyboard](https://www.digikey.co.nz/products/en?mpart=DEV-14412&v=1568)
+
+* [11 x 1N4148](https://nz.element14.com/diodes-inc/1n4148w-7-f/diode-switch-300ma-100v-sod123/dp/1776392?st=1N4148W-7-F)
+
+* [11 x 47uF Electrolytic Capacitor](https://nz.element14.com/panasonic/eee1ca470sp/ae-capacitor-case-radial-can-smd/dp/9696946?st=47uF%20electrolytic%20smt)
+
+* [11 x 100nF Capacitor](https://nz.element14.com/avx/08055c104jat2a/cap-0-1-f-50v-5-x7r-0805/dp/1740673?st=100nF%200805)
+
+* [11 x DS3231M](https://www.digikey.co.nz/product-detail/en/maxim-integrated/DS3231MPMB1/DS3231MPMB1-ND/3661364)
+
+* [11 x CR1025 Batteries](https://www.mrpositive.co.nz/panasonic-cr1025-3v-lithium-button-cell-battery)
+
+* [11 x TTL to RS485 Converter](https://www.aliexpress.com/item/32668863095.html)
+
+* [10 x LIS3DH](https://www.adafruit.com/product/2809)
+
+* [10 x TMP36](https://www.digikey.co.nz/product-detail/en/analog-devices-inc/TMP36GT9Z/TMP36GT9Z-ND/820404)
+
 ## Troubleshooting
