@@ -12,6 +12,14 @@ The file has three folders:
 
 ## Code Setup
 
+* Download uPycraft IDE
+
+* Copy respective files (main.py + boot.py + libraries) to SD card
+
+### Datalogger
+
+### Receiver
+
 ## PCB
 
 ## Troubleshooting
