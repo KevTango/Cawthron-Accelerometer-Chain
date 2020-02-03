@@ -16,7 +16,7 @@ The file has three folders:
 
 * Copy respective files (main.py + boot.py + libraries) to SD card
 
-** NOTE: If SD card is larger than 32GB, use GUIFormat to format SD card to FAT32 **
+**NOTE: If SD card is larger than 32GB, use GUIFormat to format SD card to FAT32**
 
 ### Datalogger
 
