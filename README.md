@@ -70,6 +70,15 @@ Wiring diagram is provided in the PCB folder (datalogger_schematic.PNG and recei
 
 Make sure the terminal A connect with other terminal A and same for terminal B
 
+## Ordering PCBs 
+
+I have provided the zip files containing gerber files and NC drill files in the PCB folder (Datalogger_v2.zip and Receiver_v2.zip)
+(JLCPCB)[https://jlcpcb.com/] is recommended
+
+Datalogger board size: 57mm x 62mm
+
+Receiver board size: 68mm x 64mm
+
 ## Troubleshooting
 
 * Sometimes the compiler will append code at the bottom of original code, make sure to delete it
