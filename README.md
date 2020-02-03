@@ -12,6 +12,8 @@ The file has three folders:
 
 ## Code Setup
 
+* `git clone` or download the code as a zip file
+
 * Download uPycraft IDE
 
 * Copy respective files (main.py + boot.py + libraries) to SD card
@@ -66,4 +68,14 @@ Components needed and links for 1 datalogger and 10 receivers:
 
 Wiring diagram is provided in the PCB folder (datalogger_schematic.PNG and receiver_schematic.PNG)
 
+Make sure the terminal A connect with other terminal A and same for terminal B
+
 ## Troubleshooting
+
+* Sometimes the compiler will append code at the bottom of original code, make sure to delete it
+
+* If all the LEDs are flashing in order (i.e. board is corrupted), hold the USR button then the RST button.
+Let go of the USR button and let go of the RST button once the orange+green LEDs light up to reset board to factory settings.
+Recopy code to SD card
+
+**If there are any issues with the code/components email me or open up an issue on GitHub**
