@@ -22,11 +22,25 @@ The file has three folders:
 
 1. Choose datalogging mode in: `MODE` to `MODE = DATA_RATE_1HZ` for 1 Hz or `MODE = DATA_RATE_2HZ` for 2 Hz
 
-2. To set up RTC, uncomment section under Date initialisation and follow formatting
+2. To set up RTC, uncomment section under date initialisation and follow formatting
 
-3. Run the code to save the time and comment out the RTC code section as before to stop it from re-initialising the time each time
+3. Run the code to save the time
+
+4. Comment out the RTC code section as before to stop it from re-initialising the time each time
+
+5. Rerun the code
 
 ### Receiver
+
+1. Configure ID from 0-9 under `ID = _` **MAKE SURE EACH ID NUMBER IS DIFFERENT**
+
+2. To set up RTC, uncomment section under date initialisation and follow formatting
+
+3. Run the code to save the time
+
+4. Comment out the RTC code section as before to stop it from re-initialising the time each time
+
+5. Rerun the code
 
 ## PCB
 
