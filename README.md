@@ -73,7 +73,7 @@ Make sure the terminal A connect with other terminal A and same for terminal B
 ## Ordering PCBs 
 
 I have provided the zip files containing gerber files and NC drill files in the PCB folder (Datalogger_v2.zip and Receiver_v2.zip)
-(JLCPCB)[https://jlcpcb.com/] is recommended
+[JLCPCB](https://jlcpcb.com/) is recommended
 
 Datalogger board size: 57mm x 62mm
 
