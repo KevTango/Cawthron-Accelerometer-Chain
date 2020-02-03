@@ -20,6 +20,12 @@ The file has three folders:
 
 ### Datalogger
 
+1. Choose datalogging mode in: `MODE` to `MODE = DATA_RATE_1HZ` for 1 Hz or `MODE = DATA_RATE_2HZ` for 2 Hz
+
+2. To set up RTC, uncomment section under Date initialisation and follow formatting
+
+3. Run the code to save the time and comment out the RTC code section as before to stop it from re-initialising the time each time
+
 ### Receiver
 
 ## PCB
