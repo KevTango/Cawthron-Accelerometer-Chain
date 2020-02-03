@@ -22,7 +22,7 @@ The file has three folders:
 
 ### Datalogger
 
-1. Choose datalogging mode in: `MODE` to `MODE = DATA_RATE_1HZ` for 1 Hz or `MODE = DATA_RATE_2HZ` for 2 Hz
+1. Choose datalogging mode in `MODE` to `MODE = DATA_RATE_1HZ` for 1 Hz or `MODE = DATA_RATE_2HZ` for 2 Hz
 
 2. To set up RTC, uncomment section under date initialisation and follow formatting
 
@@ -31,6 +31,14 @@ The file has three folders:
 4. Comment out the RTC code section as before to stop it from re-initialising the time each time
 
 5. Rerun the code
+
+* Red LED will light up to signify receiver 0 and/or 1 information has been received
+
+* Green LED will light up to signify receiver 2 and/or 3 and/or 4 information has been received
+
+* Yellow LED will light up to signify receiver 5 and/or 6 and/or 7 information has been received
+
+* Yellow LED will light up to signify receiver 8 and/or 9 information has been received
 
 ### Receiver
 
@@ -84,7 +92,7 @@ Receiver board size: 68mm x 64mm
 * Sometimes the compiler will append code at the bottom of original code, make sure to delete it
 
 * If all the LEDs are flashing in order (i.e. board is corrupted), hold the USR button then the RST button.
-Let go of the USR button and let go of the RST button once the orange+green LEDs light up to reset board to factory settings.
+Let go of the USR button and let go of the RST button once the yellow+green LEDs light up to reset board to factory settings.
 Recopy code to SD card
 
 **If there are any issues with the code/components email me or open up an issue on GitHub**
