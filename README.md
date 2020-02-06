@@ -91,8 +91,11 @@ Receiver board size: 68mm x 64mm
 
 * Sometimes the compiler will append code at the bottom of original code, make sure to delete it
 
-* If all the LEDs are flashing in order (i.e. board is corrupted), hold the USR button then the RST button.
+* If all the LEDs are flashing in order (e.g. board is corrupted), hold the USR button then the RST button.
 Let go of the USR button and let go of the RST button once the yellow+green LEDs light up to reset board to factory settings.
 Recopy code to SD card
+
+* If there are errors in the code, make sure to copy the whole code, 
+press Ctrl+E to enter copy paste mode in the REPL/console, paste the code then press Ctrl+D to run the code and view the error
 
 **If there are any issues with the code/components email me or open up an issue on GitHub**
