@@ -38,7 +38,7 @@ The file has three folders:
 
 * Yellow LED will light up to signify receiver 5 and/or 6 and/or 7 information has been received
 
-* Yellow LED will light up to signify receiver 8 and/or 9 information has been received
+* Blue LED will light up to signify receiver 8 and/or 9 information has been received
 
 ### Receiver
 
@@ -51,6 +51,8 @@ The file has three folders:
 4. Comment out the RTC code section as before to stop it from re-initialising the time each time
 
 5. Rerun the code
+
+* The Blue LED will light up to signify the receiver has transmitted to the datalogger 
 
 ## PCB
 
