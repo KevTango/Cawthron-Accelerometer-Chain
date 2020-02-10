@@ -18,7 +18,7 @@ The file has three folders:
 
 * Copy respective files (main.py + boot.py + libraries) to SD card
 
-**NOTE: If SD card is larger than 32GB, use GUIFormat to format SD card to FAT32**
+**NOTE: If the SD card is larger than 32GB, use GUIFormat to format SD card to FAT32**
 
 ### Datalogger
 
@@ -32,13 +32,13 @@ The file has three folders:
 
 5. Rerun the code
 
-* Red LED will light up to signify receiver 0 and/or 1 information has been received
+* The red LED will light up to signify receiver 0 and/or 1 information has been received
 
-* Green LED will light up to signify receiver 2 and/or 3 and/or 4 information has been received
+* The green LED will light up to signify receiver 2 and/or 3 and/or 4 information has been received
 
-* Yellow LED will light up to signify receiver 5 and/or 6 and/or 7 information has been received
+* The yellow LED will light up to signify receiver 5 and/or 6 and/or 7 information has been received
 
-* Blue LED will light up to signify receiver 8 and/or 9 information has been received
+* The blue LED will light up to signify receiver 8 and/or 9 information has been received
 
 ### Receiver
 
