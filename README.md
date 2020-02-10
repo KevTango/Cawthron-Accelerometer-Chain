@@ -98,4 +98,6 @@ Recopy code to SD card
 * If there are errors in the code, make sure to copy the whole code, 
 press Ctrl+E to enter copy paste mode in the REPL/console, paste the code then press Ctrl+D to run the code and view the error
 
+* The csv file cannot be viewed while the SD card is plugged into the Pyboard. A SD card reader is required to view the csv file
+
 **If there are any issues with the code/components email me or open up an issue on GitHub**
