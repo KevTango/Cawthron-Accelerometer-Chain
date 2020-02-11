@@ -52,7 +52,7 @@ The file has three folders:
 
 5. Rerun the code
 
-* The Blue LED will light up to signify the receiver has transmitted to the datalogger 
+* The Green LED will flash to signify the receiver has transmitted to the datalogger 
 
 ## PCB
 
