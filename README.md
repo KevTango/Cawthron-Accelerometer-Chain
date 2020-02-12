@@ -102,4 +102,7 @@ press Ctrl+E to enter copy paste mode in the REPL/console, paste the code then p
 
 * The csv file cannot be viewed while the SD card is plugged into the Pyboard. A SD card reader is required to view the csv file
 
+* The watchdog timer has been disabled if the pyboard has been powered by a USB to ensure ease of debugging.
+Make sure to power the Pyboard with a battery if in use
+
 **If there are any issues with the code/components email me or open up an issue on GitHub**
