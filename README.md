@@ -14,7 +14,7 @@ The file has three folders:
 
 * `git clone` or download the code as a zip file
 
-* Download uPycraft IDE
+* Download uPycraft IDE or simply use a text editor such as Notepad++
 
 * Copy respective files (main.py + boot.py + libraries) to SD card
 
