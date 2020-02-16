@@ -76,18 +76,20 @@ Components needed and links for 1 datalogger and 10 receivers:
 
 * [10 x TMP36](https://www.digikey.co.nz/product-detail/en/analog-devices-inc/TMP36GT9Z/TMP36GT9Z-ND/820404)
 
+* M3 Standoffs (Optional)
+
 Wiring diagram is provided in the PCB folder (datalogger_schematic.PNG and receiver_schematic.PNG)
 
 Make sure the terminal A connect with other terminal A and same for terminal B
 
 ## Ordering PCBs 
 
-I have provided the zip files containing gerber files and NC drill files in the PCB folder (Datalogger_v2.zip and Receiver_v2.zip)
+I have provided the zip files containing gerber files and NC drill files in the PCB folder (Datalogger_v3.zip and Receiver_v3.zip)
 [JLCPCB](https://jlcpcb.com/) is recommended
 
-Datalogger board size: 57mm x 62mm
+Datalogger board size: 74mm x 73mm
 
-Receiver board size: 68mm x 64mm
+Receiver board size: 74mm x 70mm
 
 ## Troubleshooting
 
